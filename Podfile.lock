@@ -1,0 +1,42 @@
+PODS:
+  - google-cast-sdk (3.2.0):
+    - google-cast-sdk/Core (= 3.2.0)
+  - google-cast-sdk/Core (3.2.0)
+  - GoogleAds-IMA-iOS-SDK (3.1.0)
+  - KalturaPlayerSDKStreamamg (2.7.2):
+    - KalturaPlayerSDKStreamamg/Core (= 2.7.2)
+    - KalturaPlayerSDKStreamamg/GoogleCast (= 2.7.2)
+    - KalturaPlayerSDKStreamamg/Widevine (= 2.7.2)
+  - KalturaPlayerSDKStreamamg/Core (2.7.2)
+  - KalturaPlayerSDKStreamamg/GoogleCast (2.7.2):
+    - google-cast-sdk (~> 3.2.0)
+  - KalturaPlayerSDKStreamamg/Widevine (2.7.2)
+
+DEPENDENCIES:
+  - google-cast-sdk
+  - GoogleAds-IMA-iOS-SDK (~> 3.1.0)
+  - "KalturaPlayerSDKStreamamg (from `https://francodriansetti@bitbucket.org/sukdev/kaltura-ios-sdk.git`, tag `master`)"
+
+SPEC REPOS:
+  trunk:
+    - google-cast-sdk
+    - GoogleAds-IMA-iOS-SDK
+
+EXTERNAL SOURCES:
+  KalturaPlayerSDKStreamamg:
+    :git: "https://francodriansetti@bitbucket.org/sukdev/kaltura-ios-sdk.git"
+    :tag: master
+
+CHECKOUT OPTIONS:
+  KalturaPlayerSDKStreamamg:
+    :git: "https://francodriansetti@bitbucket.org/sukdev/kaltura-ios-sdk.git"
+    :tag: master
+
+SPEC CHECKSUMS:
+  google-cast-sdk: f4c2a14214ad486cc26a8f8837e8481c906a0ea8
+  GoogleAds-IMA-iOS-SDK: f3b926d347907538113afcf1f4c1d131a6dce71f
+  KalturaPlayerSDKStreamamg: 4ad32931a0530550c53c3ba67af889a4f38b7912
+
+PODFILE CHECKSUM: a7aafb23c93206627d2838495829e3ed1f755376
+
+COCOAPODS: 1.8.1
