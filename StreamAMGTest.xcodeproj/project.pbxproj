@@ -15,6 +15,7 @@
 		9DD4C5E7205BCFCF003BFB48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DD4C5E5205BCFCF003BFB48 /* Main.storyboard */; };
 		9DD4C5E9205BCFCF003BFB48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DD4C5E8205BCFCF003BFB48 /* Assets.xcassets */; };
 		9DD4C5EC205BCFCF003BFB48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DD4C5EA205BCFCF003BFB48 /* LaunchScreen.storyboard */; };
+		CD9481DE25CDA2FE001A8718 /* AdvertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9481DD25CDA2FE001A8718 /* AdvertModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		9DD4C625205BD366003BFB48 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		9DD4C627205BD36E003BFB48 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		9DD4C629205BD375003BFB48 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		CD9481DD25CDA2FE001A8718 /* AdvertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertModel.swift; sourceTree = "<group>"; };
 		FC7FB698D827022F1D79D69F /* libPods-StreamAMGTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StreamAMGTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF3DB632958B56221422B836 /* Pods-StreamAMGTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamAMGTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StreamAMGTest/Pods-StreamAMGTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +111,7 @@
 				9DD4C5ED205BCFCF003BFB48 /* Info.plist */,
 				9DD4C5F3205BCFDB003BFB48 /* StreamAMGTest-Bridging-Header.h */,
 				9DA256112152817E00BDAC5D /* NotesNoInGit.swift */,
+				CD9481DD25CDA2FE001A8718 /* AdvertModel.swift */,
 			);
 			path = StreamAMGTest;
 			sourceTree = "<group>";
@@ -281,10 +284,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-StreamAMGTest/Pods-StreamAMGTest-frameworks.sh",
+				"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework",
 				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-Public-3.2.0-Release/GoogleCast.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleInteractiveMediaAds.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleCast.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +308,7 @@
 				9DD4C5E4205BCFCF003BFB48 /* ViewController.swift in Sources */,
 				9DA256122152817E00BDAC5D /* NotesNoInGit.swift in Sources */,
 				9DD4C5E2205BCFCF003BFB48 /* AppDelegate.swift in Sources */,
+				CD9481DE25CDA2FE001A8718 /* AdvertModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,10 +453,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = StreamAMGTest/StreamAMGTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = W42F3L99V9;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = StreamAMGTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -473,10 +480,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = StreamAMGTest/StreamAMGTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = W42F3L99V9;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = StreamAMGTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
