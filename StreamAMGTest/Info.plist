@@ -25,6 +25,12 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSBluetoothAlwaysUsageDescription </key>
+	<string>StreamAMGTest is requesting this permission to enable Chromecast support</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>StreamAMGTest  is requesting this permission to enable Chromecast support</string>
+	<key>NSMicrophoneUsageDescription </key>
+	<string>StreamAMGTest is requesting this permission to enable Chromecast support</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>
