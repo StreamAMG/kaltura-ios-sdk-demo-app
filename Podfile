@@ -6,8 +6,7 @@ target 'StreamAMGTest' do
   # use_frameworks!
 
   # Pods for StreamAMGTest
-    # pod 'KalturaPlayerSDKStreamamg', :path => '../kaltura-ios-sdk'
-    pod 'KalturaPlayerSDKStreamamg', :git => 'https://francodriansetti@bitbucket.org/sukdev/kaltura-ios-sdk.git', :tag => 'master'
+    pod 'KalturaPlayerSDKStreamamg', :git => 'git@bitbucket.org:sukdev/kaltura-ios-sdk.git', :branch => 'ZEUS-183_iOS_IMA_Update'
     pod 'GoogleAds-IMA-iOS-SDK' , '~> 3.1.0'
     pod 'google-cast-sdk'
 
