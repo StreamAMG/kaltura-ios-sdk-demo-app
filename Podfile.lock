@@ -15,7 +15,7 @@ PODS:
 DEPENDENCIES:
   - google-cast-sdk
   - GoogleAds-IMA-iOS-SDK (~> 3.13.0)
-  - KalturaPlayerSDKStreamamg (from `../kaltura-ios-sdk`)
+  - "KalturaPlayerSDKStreamamg (from `git@bitbucket.org:sukdev/kaltura-ios-sdk.git`, branch `ZEUS-183_iOS_IMA_Update`)"
 
 SPEC REPOS:
   trunk:
@@ -24,13 +24,19 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   KalturaPlayerSDKStreamamg:
-    :path: "../kaltura-ios-sdk"
+    :branch: ZEUS-183_iOS_IMA_Update
+    :git: "git@bitbucket.org:sukdev/kaltura-ios-sdk.git"
+
+CHECKOUT OPTIONS:
+  KalturaPlayerSDKStreamamg:
+    :commit: 3df23989052384ce1e755048280d38b1ddc561ff
+    :git: "git@bitbucket.org:sukdev/kaltura-ios-sdk.git"
 
 SPEC CHECKSUMS:
   google-cast-sdk: f4c2a14214ad486cc26a8f8837e8481c906a0ea8
   GoogleAds-IMA-iOS-SDK: b8d3693d370edcbd1440c827897c2b2a0b76673d
   KalturaPlayerSDKStreamamg: 32c7f4202b7f5177fa4b9a0b7faf6efc1d3f6438
 
-PODFILE CHECKSUM: ff32272fb24c29f4b21d2ec8dfb7e4a8517b9d24
+PODFILE CHECKSUM: 54a5e9ae3fc7bda9ae8a7d45b4f4e36737cc7055
 
 COCOAPODS: 1.10.1
