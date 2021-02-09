@@ -37,30 +37,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         setUpAdverts()
         
-//        /* Initialize player */
-//        let config = KPPlayerConfig(server: mediaServer, uiConfID: mediaUiConfID, partnerId: mediaPartnerID)
-//        config!.entryId = "0_9fcwzpij" /// Set here your entryID
-//
-//        /* Setup ks if you need */
-//        //config?.ks = ""
-//
-//
-//
-//        player = KPViewController(configuration: config)
-//
-//        /* Setup player container */
-//        containerView = UIView()
-//        containerView.frame = CGRect(x: 0, y: 200, width: self.view.bounds.width, height: self.view.bounds.width / 16 * 9)
-//        player.view.frame = containerView.bounds
-//        self.player.loadPlayer(into: self)
-//        containerView.addSubview(player.view)
-//        self.view.addSubview(containerView)
-//        player.delegate = self
-//        self.addChildViewController(player!)
-//        castProvider = GoogleCastProvider.init()
-//        castProvider?.delegate = self
-//
-        
         playMedia(advert: nil)
     }
     
@@ -138,7 +114,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     func setupCastButton() {
         
-        
         // Set AirPlay button
         let airPlayBtn = MPVolumeView(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
         airPlayBtn.showsVolumeSlider = false
@@ -154,15 +129,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         let barbuttonItem = UIBarButtonItem(customView: castButton)
         barbuttonItem.tintColor = UIColor.blue
         self.navigationItem.rightBarButtonItems?.append(barbuttonItem)
-        
-        //        if #available(iOS 11.0, *) {
-        //            let routePickerView = AVRoutePickerView(frame: .init(x: self.view.frame.maxX/2, y: self.view.frame.maxY/2, width: 40, height: 40))
-        //            routePickerView.tintColor = .black
-        //
-        //            view.addSubview(routePickerView)
-        //        } else {
-        //            // Fallback on earlier versions
-        //        }
+
     }
     
     func setUpAdverts(){
